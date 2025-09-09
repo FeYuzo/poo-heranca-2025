@@ -1,9 +1,7 @@
 package app;
 
-public class PessoaJuridica {
-    private String nome;
-    private String endereco;
-    private LocalDate dataCriacao;
+
+public class PessoaJuridica extends Pessoa {
     private String nomeFantasia;
     private String cnpj;
 
@@ -12,27 +10,6 @@ public class PessoaJuridica {
         this.setEndereco(endereco);
         this.setNomeFantasia(nomeFantasia);
         this.setCnpj(cnpj);
-    }
-
-    public String getNome() {
-        return nome;
-    }
-    public void setNome(String nome){
-        this.nome = nome;
-    }
-
-    public String getEndereco() {
-        return endereco;
-    }
-    public void setEndereco(String endereco){
-        this.endereco = endereco;
-    }
-
-    public LocalDate getDataCriacao() {
-        return dataCriacao;
-    }
-    public void setDataCriacao(LocalDate dataCriacao){
-        this.dataCriacao = dataCriacao;
     }
 
     public String getNomeFantasia() {
@@ -53,8 +30,7 @@ public class PessoaJuridica {
         System.out.println("Nome :"+this.getNome+ 
         "Endereço: "+this.getEndereco+
         "Data Criação: "+this.getDataCriacao+
-        "CNPJ: "+this.getCnpj+
-        );
+        "CNPJ: "+this.getCnpj+);
     }
 
 

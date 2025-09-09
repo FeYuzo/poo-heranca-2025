@@ -23,5 +23,19 @@ public class Main {
             "1234323455");
       
         Sytem.out.println(pf.exibirInformacao());
+
+        PessoaJuridica pj = new PessoaJuridica(
+            "Felipe",
+            "Av. Shunji Nishimura",
+            "FATEC Pompéia",
+            "12345512345512");
+        System.out.println(pj.exibirInformacao());
+
+        Pessoa p1 = pf;
+        System.out.println(p1.exibirInformacao());
+
+        p1 = pj;
+        System.out.println(pj.exibirInformacao());
+        
     }
 }
